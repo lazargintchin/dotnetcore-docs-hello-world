@@ -27,7 +27,7 @@ public class IndexModel : PageModel
     
     public void placeMessageOnQueue()
     {
-        CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=lazarstorage;AccountKey=XsQnGVw4M2b7IosvmPhUZVRrUl8To+TDB0ioirQyv6U7TxsKkSaABN3SMmBZOfbtbfA8VCeUYaM1+AStUoYkww==;EndpointSuffix=core.windows.net");
+        CloudStorageAccount storageAccount = CloudStorageAccount.Parse("conn-string");
         CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
         CloudQueue queue = queueClient.GetQueueReference("lazarq");
 
