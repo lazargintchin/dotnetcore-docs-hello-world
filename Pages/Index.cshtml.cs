@@ -31,7 +31,7 @@ public class IndexModel : PageModel
         CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
         CloudQueue queue = queueClient.GetQueueReference("lazarq");
 
-        string messageContent = "This is a test message";
+        string messageContent = "Demo message for Sam";
         CloudQueueMessage message = new CloudQueueMessage(messageContent);
         queue.AddMessage(message);
     }
