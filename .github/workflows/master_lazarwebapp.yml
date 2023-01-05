@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'LazarWebApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_59B7E55922C64BE391B3C3A93F79FFA5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D216BC1DCA4849A7B7903B699BA78BF1 }}
           package: .
